@@ -1,0 +1,9 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "integrationFolder": "__tests__/cypress/",
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 10000,
+    "video": true,
+    "trashAssetsBeforeRuns": true,
+    "testFiles": ["**/*.cypress.tsx"]
+}

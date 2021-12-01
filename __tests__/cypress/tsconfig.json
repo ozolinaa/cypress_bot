@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "cypress", "../../cypress/support/index"],
+    "sourceMap": false
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules"],
+}
