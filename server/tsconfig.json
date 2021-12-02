@@ -1,8 +1,28 @@
 {
   "compilerOptions": {
-    "module": "commonjs"
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "types": [
+      "node"
+    ],
+    "strict": true,
+    "sourceMap": true,
+    "target": "es2018",
+    "rootDir": "../",
+    "baseUrl": "../",
+    "paths": {
+      "src/*": ["./src/*"]
+    }
   },
   "include": ["**/*"],
-  "exclude": ["node_modules"],
-  "extends": "../tsconfig.json"
+  "exclude": [
+    "node_modules", "../src/"
+  ]
 }

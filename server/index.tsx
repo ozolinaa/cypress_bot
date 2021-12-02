@@ -4,8 +4,7 @@ import express from "express";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
-
-import ReactApp from "../src/core/app";
+import ReactApp from "src/core/app";
 
 const PORT = parseInt(process.argv[process.argv.indexOf("--port") + 1]);
 const app = express();
@@ -50,6 +49,3 @@ app.use(express.static("./dist"));
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
-
-// npm install webpack webpack-cli webpack-node-externals @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
-// npm install ts-node --save-dev
