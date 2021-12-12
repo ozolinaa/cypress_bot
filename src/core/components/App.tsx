@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import UserDetails, { UserDetailsProps } from "src/user/userDetails";
-import Counter from "src/common/counter";
+import UserDetails, { UserDetailsProps } from "src/user/components/UserDetails";
+import Counter from "src/common/components/Counter";
 
 const Container = styled("div")`
   position: absolute;

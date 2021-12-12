@@ -4,7 +4,7 @@ import express from "express";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
-import ReactApp from "src/core/app";
+import ReactApp from "src/core/components/App";
 
 const PORT = parseInt(process.argv[process.argv.indexOf("--port") + 1]);
 const app = express();

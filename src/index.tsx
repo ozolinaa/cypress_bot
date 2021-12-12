@@ -4,9 +4,9 @@ import "core-js/features/promise";
 import "core-js/features/set";
 import "raf/polyfill";
 import "whatwg-fetch";
-import "./index.css";
+import "./globalStyles";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "src/core/app";
+import App from "src/core/components/App";
 
 ReactDOM.hydrate(<App />, document.getElementById("app-root"));
