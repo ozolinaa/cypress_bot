@@ -2,6 +2,7 @@
   "name": "react_ssr",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "clean": "rm -r -f node_modules dist server/dist cypress/videos",
@@ -17,7 +18,11 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "test:cypress": "concurrently -k 'npm run server' 'npm run cypress:run'",
-    "storybook:start": "start-storybook -s ./ -p 6006"
+    "storybook": "start-storybook -s ./ -p 6006",
+    "docker:build": "docker build . -t 'xtonyx/react_ssr'",
+    "docker:run": "docker run -p 3000:3000 --name react_ssr xtonyx/react_ssr",
+    "docker:clean": "docker rm -f react_ssr && docker image rm -f 'xtonyx/react_ssr'",
+    "docker:run_clean": "npm run docker:clean && npm run docker:build && npm run docker:run"
   },
   "author": "",
   "license": "ISC",
