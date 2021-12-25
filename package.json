@@ -1,5 +1,5 @@
 {
-  "name": "react_ssr",
+  "name": "cypress_bot",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -19,9 +19,9 @@
     "cypress:run": "cypress run",
     "test:cypress": "concurrently -k 'npm run server' 'npm run cypress:run'",
     "storybook": "start-storybook -s ./ -p 6006",
-    "docker:build": "docker build . -t 'xtonyx/react_ssr'",
-    "docker:run": "docker run -p 3000:3000 --name react_ssr xtonyx/react_ssr",
-    "docker:clean": "docker rm -f react_ssr && docker image rm -f 'xtonyx/react_ssr'",
+    "docker:build": "docker build . -t 'xtonyx/cypress_bot'",
+    "docker:run": "docker run -p 3000:3000 --name cypress_bot xtonyx/cypress_bot",
+    "docker:clean": "docker rm -f cypress_bot && docker image rm -f 'xtonyx/cypress_bot'",
     "docker:run_clean": "npm run docker:clean && npm run docker:build && npm run docker:run"
   },
   "author": "",

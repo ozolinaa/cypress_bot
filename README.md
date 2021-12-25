@@ -1,4 +1,4 @@
-# What is "react_ssr"
+# What is "cypress_bot"
 
 This package is created "from sratch" using [this article](https://dev.to/alekseiberezkin/setting-up-react-typescript-app-without-create-react-app-oph)
 
@@ -7,8 +7,8 @@ It supports react server side rendering was following these articles:
  - [enabled styles for styled components](https://styled-components.com/docs/advanced#server-side-rendering)
 
 It is containerized using Docker:
-- `docker build . -t 'xtonyx/react_ssr'`
-- `docker run -d -p 3000:3000 --name react_ssr xtonyx/react_ssr`
+- `docker build . -t 'xtonyx/cypress_bot'`
+- `docker run -d -p 3000:3000 --name cypress_bot xtonyx/cypress_bot`
 
 NPM scripts description:
 - `npm run build:ui` builds static UI files *(into **./dist/** directory)*
